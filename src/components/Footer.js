@@ -15,7 +15,7 @@ const Footer = () => {
             <Link href="/faq">FAQ</Link>
             <Link href="/contact">Contact</Link>
           </Stack>
-          <Text>© 2023 Paws & Care. All rights reserved.</Text>
+          <Text>© 2023 Paws & Relax. All rights reserved.</Text>
           <Text>123 Pet Street, Anytown, USA 12345</Text>
           <Stack direction="row" spacing={2}>
             <IconButton aria-label="Facebook" icon={<FaFacebook />} rounded="full" />

@@ -1,11 +1,11 @@
-# Paws & Care Website
+# Paws & Relax Website
 
-This project is a website for Paws & Care, a pet-sitting business. It was originally created by Devin as part of a development project.
+This project is a website for Paws & Relax, a pet-sitting business. It was originally created by Devin as part of a development project.
 
 ## Project Overview
 
-- **Project Name:** Paws & Care Website
-- **GitHub Repository:** [Paes_and_relax](https://github.com/KadeKorn/Paes_and_relax.git)
+- **Project Name:** Paws & Relax Website
+- **GitHub Repository:** [Paws_and_relax](https://github.com/KadeKorn/Paws_and_relax.git)
 - **Description:** A React-based website for a pet-sitting business, showcasing services, testimonials, and allowing customers to book appointments.
 
 ## Getting Started with Create React App
