@@ -5,7 +5,7 @@ This project is a website for Paws & Relax, a pet-sitting business. It was origi
 ## Project Overview
 
 - **Project Name:** Paws & Relax Website
-- **GitHub Repository:** [Paes_and_relax](https://github.com/KadeKorn/Paws_and_relax.git)
+- **GitHub Repository:** [Paws_and_relax](https://github.com/KadeKorn/Paws_and_relax.git)
 - **Description:** A React-based website for a pet-sitting business, showcasing services, testimonials, and allowing customers to book appointments.
 
 ## Getting Started with Create React App
