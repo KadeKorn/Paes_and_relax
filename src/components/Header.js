@@ -7,7 +7,7 @@ const Header = () => {
     <Box bg="gray.100" py={4}>
       <Flex maxW="container.xl" mx="auto" align="center">
         <Box fontWeight="bold" fontSize="xl">
-          Paws & Care
+          Paws & Relax
         </Box>
         <Spacer />
         <Flex as="nav">

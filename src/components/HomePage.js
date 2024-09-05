@@ -9,7 +9,7 @@ const HomePage = () => {
           Loving Care for Your Pets While You're Away
         </Heading>
         <Text fontSize="xl" textAlign="center" maxW="container.md">
-          Welcome to Paws & Care, where we treat your furry friends like family. Our dedicated team ensures your pets receive the love and attention they deserve when you can't be there.
+          Welcome to Paws & Relax, where we treat your furry friends like family. Our dedicated team ensures your pets receive the love and attention they deserve when you can't be there.
         </Text>
         <Image
           src="/images/happy-pets.jpg"
