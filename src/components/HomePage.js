@@ -17,7 +17,7 @@ const HomePage = () => {
       justifyContent="center"
       alignItems="center"
     >
-      <VStack spacing={1.5} align="center" p={8} borderRadius="md" maxW="container.md">
+      <VStack spacing={1} align="center" p={8} borderRadius="md" maxW="container.md">
         <Heading as="h1" size="2xl" textAlign="center" color="blue.900">
           Paws & Relax
         </Heading>

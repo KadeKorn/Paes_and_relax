@@ -1,44 +1,41 @@
 import React from 'react';
-import { Box, Heading, Text, Image, VStack, Container } from '@chakra-ui/react';
+import { Box, Heading, Text, Image, Container } from '@chakra-ui/react';
 
 const AboutUs = () => {
   return (
     <Box as="section" py={10}>
       <Container maxW="container.xl">
-        <VStack spacing={8} align="stretch">
-          <Heading as="h2" size="xl" textAlign="center">
-            About Paws & Relax
-          </Heading>
+        <Heading as="h2" size="xl" textAlign="center" mb={8}>
+          About Paws & Relax
+        </Heading>
 
+        <Box>
+          {/* Wrapping Image */}
+          <Image
+            src="/IMG_6951.jpg"  // Placeholder for your image
+            alt="Founder of Paws & Relax"
+            borderRadius="full"  // Circular image
+            boxSize="300px"  // Adjust size as needed
+            float="left"  // Float image to the left to make the text wrap around it
+            mr={6}  // Add space between image and text
+            mb={4}  // Add bottom margin to prevent text from overlapping the image
+          />
+
+          {/* First Paragraph */}
           <Text fontSize="lg">
-            At Paws & Relax, we understand that your pets are more than just animals – they're family.
-            Our mission is to provide loving, attentive care for your furry friends when you can't be there.
-            Founded in 2010, we've been serving our local community with passion and dedication, ensuring
-            that every pet receives the individual attention they deserve.
+            Paws & Relax was born out of my passion for animals and my desire to create a service that truly understands the needs of busy Arizonans. My name is Kade Korn, and as an ASU grad working remotely in technology, I understand the importance of finding trustworthy, compassionate care for your pets while you’re away.
           </Text>
 
-          <Box>
-            <Heading as="h3" size="lg" mb={4}>
-              Meet Our Founder
-            </Heading>
-            <Image
-              src="/founder-image.jpg"
-              alt="Founder of Paws & Relax"
-              borderRadius="md"
-              float="left"
-              mr={6}
-              mb={4}
-              maxW="200px"
-            />
-            <Text fontSize="md">
-              Jane Doe, the founder of Paws & Relax, has been an animal lover all her life.
-              With over 15 years of experience in pet care and a degree in Animal Behavior,
-              Jane started Paws & Relax to combine her passion with her expertise. Her goal
-              is to create a service that pet owners can trust completely, knowing their
-              beloved companions are in the best hands possible when they're away.
-            </Text>
-          </Box>
-        </VStack>
+          {/* Second Paragraph */}
+          <Text fontSize="lg" mt={4}>
+            Growing up in Arizona, I’ve always had a deep connection with this community, and I know firsthand how much we Arizonans value our pets as part of the family. Working remotely allows me the flexibility to offer my full attention to caring for your pets, giving them the love and care they deserve.
+          </Text>
+
+          {/* Third Paragraph */}
+          <Text fontSize="lg" mt={4}>
+            Whether you're traveling, working long hours, or just need a helping hand, I’m here to make sure your pets are safe, happy, and well taken care of. This isn’t just a job for me—it’s something I love to do. From one Arizonan to another, I look forward to helping your furry friends relax while you’re away.
+          </Text>
+        </Box>
       </Container>
     </Box>
   );
