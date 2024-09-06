@@ -3,24 +3,15 @@ import { Box, VStack, Heading, Text, SimpleGrid, Card, CardHeader, CardBody, Car
 
 const services = [
   {
-    name: 'Dog Walking',
-    description: 'Daily walks to keep your furry friend active and happy.',
-    price: '$20 per 30-minute walk',
+    name: 'Pet Sitting (Cats, Dogs, and More)',
+    description: "Your pets—whether cats, dogs, or other furry friends—will enjoy personalized, in-home care tailored to their needs. From daily walks and playtime for dogs to cozy cuddles and feeding for cats, I make sure your pets feel comfortable, safe, and loved while you're away.",
+    price: 'Rates vary based on the level of care—contact me for a personalized quote.',
   },
+  
   {
-    name: 'Cat Sitting',
-    description: 'In-home care for your feline companions while you\'re away.',
-    price: '$30 per visit',
-  },
-  {
-    name: 'Pet Boarding',
-    description: 'Overnight care in our comfortable facilities.',
-    price: '$50 per night',
-  },
-  {
-    name: 'Pet Grooming',
-    description: 'Professional grooming services to keep your pet looking their best.',
-    price: 'Starting at $40',
+    name: 'Overnight Sitting',
+    description: "Full overnight care for your home and pets. I’ll stay with your furry friend to provide companionship, nighttime walks, feedings, and ensure your home stays secure while you're away.",
+    price: "$60–$80 per night",
   },
 ];
 
