@@ -5,17 +5,19 @@ const HomePage = () => {
   return (
     <Box
       as="section"
-      py={10}
+      id="home"  // Added ID for smooth scrolling links
+      pt={0}  // No top padding so the background image starts from the very top
+      mt="0"  // Removes any extra margin that might exist
       backgroundImage="url('/Day_background.png')" 
       backgroundSize="cover"
       backgroundPosition="center"
       backgroundRepeat="no-repeat"
-      height="100vh"
+      minHeight="100vh"  // Ensure full-screen height
       display="flex"
       justifyContent="center"
       alignItems="center"
     >
-      <VStack spacing={1.5} align="center"  p={8} borderRadius="md" maxW="container.md">
+      <VStack spacing={1.5} align="center" p={8} borderRadius="md" maxW="container.md">
         <Heading as="h1" size="2xl" textAlign="center" color="blue.900">
           Paws & Relax
         </Heading>
