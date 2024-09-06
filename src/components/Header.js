@@ -30,7 +30,6 @@ const Header = () => {
           <Link href="#about" mr={4} color="blue.900" _hover={{ color: "blue.500", textDecoration: "underline" }}>About Us</Link>
           <Link href="#services" mr={4} color="blue.900" _hover={{ color: "blue.500", textDecoration: "underline" }}>Services</Link>
           <Link href="#testimonials" mr={4} color="blue.900" _hover={{ color: "blue.500", textDecoration: "underline" }}>Testimonials</Link>
-          <Link href="#faq" mr={4} color="blue.900" _hover={{ color: "blue.500", textDecoration: "underline" }}>FAQ</Link>
           <Link href="#contact" mr={4} color="blue.900" _hover={{ color: "blue.500", textDecoration: "underline" }}>Contact</Link>
         </Flex>
         {/* CTA Button */}
@@ -41,3 +40,7 @@ const Header = () => {
 };
 
 export default Header;
+//Why Us / About Us
+//Pricing / Services
+//Testimonials
+//Contact

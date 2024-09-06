@@ -7,7 +7,6 @@ import AboutUs from './components/AboutUs';
 import ServicesPage from './components/ServicesPage';
 import BookingSection from './components/BookingSection';
 import TestimonialsPage from './components/TestimonialsPage';
-import FAQPage from './components/FAQPage';
 import ContactPage from './components/ContactPage';
 
 function App() {
@@ -21,7 +20,6 @@ function App() {
           <ServicesPage />
           <BookingSection />
           <TestimonialsPage />
-          <FAQPage />
           <ContactPage />
         </VStack>
         <Footer />
