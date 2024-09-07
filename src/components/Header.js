@@ -58,20 +58,20 @@ const Header = () => {
             Services
           </Link>
           <Link
-            href="#testimonials"
-            mr={4}
-            color="blue.900"
-            _hover={{ color: "blue.500", textDecoration: "underline" }}
-          >
-            Testimonials
-          </Link>
-          <Link
             href="#contact"
             mr={4}
             color="blue.900"
             _hover={{ color: "blue.500", textDecoration: "underline" }}
           >
             Contact
+          </Link>
+          <Link
+            href="#testimonials"
+            mr={4}
+            color="blue.900"
+            _hover={{ color: "blue.500", textDecoration: "underline" }}
+          >
+            Testimonials
           </Link>
         </Flex>
         {/* CTA Button */}
