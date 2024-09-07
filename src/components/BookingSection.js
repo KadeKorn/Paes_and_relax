@@ -1,50 +1,45 @@
 import React from 'react';
-import { Box, VStack, Heading, Text, Button, FormControl, FormLabel, Input, Textarea } from '@chakra-ui/react';
+import { Box, VStack, Heading, Text, Button, SimpleGrid, Link } from '@chakra-ui/react';
+import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 
 const BookingSection = () => {
   return (
     <Box as="section" py={10}>
       <VStack spacing={6} align="stretch" maxW="container.md" mx="auto">
-        <Heading as="h2" size="xl" textAlign="center">Book Your Pet Care Service</Heading>
-        <Text textAlign="center">Schedule a visit today and give your pets the loving care they deserve!</Text>
+        {/* Main Heading */}
+        <Heading as="h2" size="xl" textAlign="center">
+          Get in Touch
+        </Heading>
 
-        <Box as="form" onSubmit={(e) => e.preventDefault()}>
-          <VStack spacing={4}>
-            <FormControl isRequired>
-              <FormLabel>Your Name</FormLabel>
-              <Input placeholder="Enter your full name" />
-            </FormControl>
+        {/* Subheading */}
+        <Text textAlign="center" fontSize="lg">
+          Schedule a visit today and give your pets the loving care they deserve! Feel free to text or call us for bookings.
+        </Text>
 
-            <FormControl isRequired>
-              <FormLabel>Email Address</FormLabel>
-              <Input type="email" placeholder="Enter your email address" />
-            </FormControl>
+        {/* Phone, Email, and Social Media */}
+        <VStack spacing={4} textAlign="center">
+          {/* Phone */}
+          <Text fontSize="lg">
+            <Text as="span" fontWeight="bold">Phone:</Text> (555) 123-4567
+          </Text>
 
-            <FormControl isRequired>
-              <FormLabel>Phone Number</FormLabel>
-              <Input type="tel" placeholder="Enter your phone number" />
-            </FormControl>
+          {/* Email */}
+          <Text fontSize="lg">
+            <Text as="span" fontWeight="bold">Email:</Text> info@pawsandcare.com
+          </Text>
 
-            <FormControl isRequired>
-              <FormLabel>Service Type</FormLabel>
-              <Input placeholder="e.g., Dog Walking, Cat Sitting, etc." />
-            </FormControl>
+          {/* Social Media */}
+          <Text fontWeight="bold" mt={4}>Follow Us:</Text>
+          <SimpleGrid columns={3} spacing={4} justifyContent="center">
+            <Link href="#" isExternal><FaFacebook size={36} /></Link>
+            <Link href="#" isExternal><FaInstagram size={36} /></Link>
+          </SimpleGrid>
+        </VStack>
 
-            <FormControl isRequired>
-              <FormLabel>Preferred Date</FormLabel>
-              <Input type="date" />
-            </FormControl>
-
-            <FormControl>
-              <FormLabel>Additional Information</FormLabel>
-              <Textarea placeholder="Tell us more about your pet and any special requirements" />
-            </FormControl>
-
-            <Button type="submit" colorScheme="blue" size="lg" width="full">
-              Schedule a Visit
-            </Button>
-          </VStack>
-        </Box>
+        {/* Call to Action Button */}
+        <Button colorScheme="blue" size="lg" width="full" onClick={() => window.location.href = 'tel:5551234567'}>
+          Call Now
+        </Button>
       </VStack>
     </Box>
   );
