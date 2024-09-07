@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Container, Stack, Text, Link, IconButton } from '@chakra-ui/react';
-import { FaFacebook, FaInstagram } from 'react-icons/fa';
+import { FaYelp, FaInstagram } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -16,7 +16,7 @@ const Footer = () => {
           </Stack>
           <Text>© 2024 Paws & Relax. All rights reserved.          </Text>
           <Stack direction="row" spacing={2}>
-            <IconButton aria-label="Facebook" icon={<FaFacebook />} rounded="full" />
+          <IconButton aria-label="Yelp" icon={<FaYelp />} rounded="full" />
             <IconButton aria-label="Instagram" icon={<FaInstagram />} rounded="full" />
           </Stack>
         </Stack>
