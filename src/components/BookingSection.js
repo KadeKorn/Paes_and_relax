@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, VStack, Heading, Text, Button, SimpleGrid, Link } from '@chakra-ui/react';
-import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { FaFacebook, FaInstagram} from 'react-icons/fa';
 
 const BookingSection = () => {
   return (
