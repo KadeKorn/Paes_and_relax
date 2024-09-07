@@ -24,15 +24,23 @@ const TestimonialsPage = () => {
   ];
 
   return (
-    <Box as="section" py={10}>
+    <Box
+      as="section"
+      py={10}
+      backgroundImage="url('/Test BG Sunset similat to About BG.webp')" 
+      backgroundSize="cover"
+      backgroundPosition="center"
+      backgroundRepeat="no-repeat"
+      minHeight="100vh"  // Ensures the section takes up at least full viewport height
+    >
       <VStack spacing={8} align="stretch">
-        <Heading as="h2" size="xl" textAlign="center">
+        <Heading as="h2" size="xl" textAlign="center" color="white">  {/* Adjust the text color if necessary */}
           What Our Clients Say
         </Heading>
 
         <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
           {testimonials.map((testimonial) => (
-            <Card key={testimonial.id}>
+            <Card key={testimonial.id} bg="rgba(255, 255, 255, 0.3)" borderRadius="md">  {/* Adds a slightly transparent background */}
               <CardBody>
                 <Image
                   src={testimonial.image}
