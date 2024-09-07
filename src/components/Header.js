@@ -58,7 +58,7 @@ const Header = () => {
             Services
           </Link>
           <Link
-            href="#contact"
+            href="#booking"
             mr={4}
             color="blue.900"
             _hover={{ color: "blue.500", textDecoration: "underline" }}
