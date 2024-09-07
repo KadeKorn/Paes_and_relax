@@ -27,6 +27,10 @@ const BookingSection = () => {
           <Text fontSize="lg">
             <Text as="span" fontWeight="bold">Email:</Text> info@pawsandcare.com
           </Text>
+        {/* Call to Action Button */}
+        <Button colorScheme="blue" size="lg" width="full" onClick={() => window.location.href = 'tel:5551234567'}>
+          Call Now
+        </Button>
 
           {/* Social Media */}
           <Text fontWeight="bold" mt={4}>Follow Us:</Text>
@@ -36,10 +40,6 @@ const BookingSection = () => {
           </SimpleGrid>
         </VStack>
 
-        {/* Call to Action Button */}
-        <Button colorScheme="blue" size="lg" width="full" onClick={() => window.location.href = 'tel:5551234567'}>
-          Call Now
-        </Button>
       </VStack>
     </Box>
   );
