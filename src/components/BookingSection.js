@@ -4,22 +4,22 @@ import { FaFacebook, FaInstagram } from 'react-icons/fa';
 
 const BookingSection = () => {
   return (
-    <Box 
-      as="booking" 
-      py={10} 
+    <Box
+      as="section"
+      py={10}
       backgroundImage="url('/Booking BG.webp')" // Background image
-      backgroundSize="cover" 
-      backgroundPosition="center" 
+      backgroundSize="cover"
+      backgroundPosition="center"
       backgroundRepeat="no-repeat"
       position="relative" // To place the transparent overlay over the background image
     >
       {/* Transparent overlay */}
-      <Box 
-        position="absolute" 
-        top="0" 
-        left="0" 
-        right="0" 
-        bottom="0" 
+      <Box
+        position="absolute"
+        top="0"
+        left="0"
+        right="0"
+        bottom="0"
         backgroundColor="rgba(255, 255, 255, 0.2)" // Slightly transparent white overlay
         zIndex={1} // Ensure the content stays above this layer
       />
