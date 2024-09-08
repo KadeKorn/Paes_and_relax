@@ -1,4 +1,6 @@
 /** @jsxImportSource @emotion/react */
+// This component implements a mobile-first design for the header, including a responsive
+// navigation menu that adapts to different screen sizes using Chakra UI's responsive utilities.
 import React, { useState } from "react";
 import {
   Box,
