@@ -27,11 +27,13 @@ const Header = () => {
       position="fixed"
       top="0"
       left="0"
-      width="100%"
+      right="0" 
+      width="94.5%" 
+      mx="auto"
       zIndex="10"
       py={4}
-      px={6}
-      background="rgba(243, 238, 225, 0.85)"
+      px={10}
+      background="rgba(243, 238, 225, 0.1)"
       boxShadow="0 4px 6px rgba(0, 0, 0, 0.1)"
       borderRadius="0 0 10px 10px"
       backdropFilter="blur(10px)"
