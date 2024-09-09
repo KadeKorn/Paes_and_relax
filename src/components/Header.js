@@ -11,7 +11,7 @@ import {
   VStack,
   Collapse,
   useDisclosure,
-  useBreakpointValue
+  useBreakpointValue,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 
@@ -25,8 +25,8 @@ const Header = () => {
       position="fixed"
       top="0"
       left="0"
-      right="0" 
-      width="94.5%" 
+      right="0"
+      width="94.5%"
       mx="auto"
       zIndex="10"
       py={4}
@@ -72,16 +72,26 @@ const Header = () => {
         <VStack
           mt={4}
           p={4}
-          bg="rgba(243, 238, 225, 0.9)" // Subtle transparent desert tone
-          spacing={6} // Updated spacing
-          align="center" // Centered menu
+          bg="rgba(255, 204, 153,)"
+          spacing={6}
+          align="center"
           display={{ md: "none" }}
         >
-          <NavLink href="#home" mobile>Home</NavLink>
-          <NavLink href="#about" mobile>About Us</NavLink>
-          <NavLink href="#services" mobile>Services</NavLink>
-          <NavLink href="#booking" mobile>Contact</NavLink>
-          <NavLink href="#testimonials" mobile>Testimonials</NavLink>
+          <NavLink href="#home" mobile>
+            Home
+          </NavLink>
+          <NavLink href="#about" mobile>
+            About Us
+          </NavLink>
+          <NavLink href="#services" mobile>
+            Services
+          </NavLink>
+          <NavLink href="#booking" mobile>
+            Contact
+          </NavLink>
+          <NavLink href="#testimonials" mobile>
+            Testimonials
+          </NavLink>
           <Button
             colorScheme="orange" // Desert tone button
             size="sm"
@@ -101,16 +111,20 @@ const NavLink = ({ href, children, mobile }) => (
     href={href}
     mr={mobile ? 0 : 4}
     color="blue.900"
+    fontWeight="bold"
+    p={mobile ? 1 : 2} // Adds more padding for better spacing
     _hover={{
-      color: "blue.500",
-      textDecoration: "underline",
-      transition: "color 0.5s ease" // Slow shimmer/fade effect
+      color: "#ff9966",  // Slightly darker and more visible hover color
+      transform: "scale(1.1)",  // Slightly bigger scale effect
+      transition: "all 0.3s ease-in-out",  // Smooth transition for both color and scale
     }}
     display={mobile ? "block" : "inline"}
     width={mobile ? "100%" : "auto"}
+    textAlign="center"
   >
     {children}
   </Link>
 );
+
 
 export default Header;
