@@ -25,7 +25,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://kadekorn.github.io/Paws_and_Relax",
+  "homepage": "https://kadekorn.github.io/Paws_and_Relax/",
   "eslintConfig": {
     "extends": [
       "react-app",
