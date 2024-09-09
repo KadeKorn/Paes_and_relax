@@ -1,7 +1,4 @@
-.App {
-  text-align: center;
-}
-html, body {
+body {
   background-color: rgba(196, 150, 104, 0.2); /* Light peachy color */
   margin: 0;
   padding: 0;
@@ -9,11 +6,13 @@ html, body {
   scroll-behavior: smooth;
 }
 
+button {
+  background-color: #ffcc99; /* Desert-inspired button color */
+  color: white;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
 
-
-
-
-
-
-
-
+button:hover {
+  transform: scale(1.05); /* Slight scale effect */
+  background-color: #e6b27b; /* Darker desert tone on hover */
+}

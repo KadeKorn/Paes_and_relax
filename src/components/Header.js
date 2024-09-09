@@ -1,7 +1,5 @@
 /** @jsxImportSource @emotion/react */
-// This component implements a mobile-first design for the header, including a responsive
-// navigation menu that adapts to different screen sizes using Chakra UI's responsive utilities.
-import React, { useState } from "react";
+import React from "react";
 import {
   Box,
   Flex,
@@ -33,7 +31,7 @@ const Header = () => {
       zIndex="10"
       py={4}
       px={10}
-      background="rgba(243, 238, 225, 0.1)"
+      background="rgba(243, 238, 225, 0.1)" // Slight transparent desert color
       boxShadow="0 4px 6px rgba(0, 0, 0, 0.1)"
       borderRadius="0 0 10px 10px"
       backdropFilter="blur(10px)"
@@ -64,7 +62,7 @@ const Header = () => {
             <NavLink href="#services">Services</NavLink>
             <NavLink href="#booking">Contact</NavLink>
             <NavLink href="#testimonials">Testimonials</NavLink>
-            <Button colorScheme="blue" ml={4} size="sm">
+            <Button colorScheme="orange" ml={4} size="sm">
               Book Now
             </Button>
           </Flex>
@@ -74,9 +72,9 @@ const Header = () => {
         <VStack
           mt={4}
           p={4}
-          bg="white"
-          spacing={4}
-          align="stretch"
+          bg="rgba(243, 238, 225, 0.9)" // Subtle transparent desert tone
+          spacing={6} // Updated spacing
+          align="center" // Centered menu
           display={{ md: "none" }}
         >
           <NavLink href="#home" mobile>Home</NavLink>
@@ -84,7 +82,12 @@ const Header = () => {
           <NavLink href="#services" mobile>Services</NavLink>
           <NavLink href="#booking" mobile>Contact</NavLink>
           <NavLink href="#testimonials" mobile>Testimonials</NavLink>
-          <Button colorScheme="blue" size="sm" width="100%">
+          <Button
+            colorScheme="orange" // Desert tone button
+            size="sm"
+            width="100%"
+            _hover={{ transform: "scale(1.05)" }} // Subtle scale-up effect on hover
+          >
             Book Now
           </Button>
         </VStack>
@@ -98,7 +101,11 @@ const NavLink = ({ href, children, mobile }) => (
     href={href}
     mr={mobile ? 0 : 4}
     color="blue.900"
-    _hover={{ color: "blue.500", textDecoration: "underline" }}
+    _hover={{
+      color: "blue.500",
+      textDecoration: "underline",
+      transition: "color 0.5s ease" // Slow shimmer/fade effect
+    }}
     display={mobile ? "block" : "inline"}
     width={mobile ? "100%" : "auto"}
   >
