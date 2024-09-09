@@ -19,7 +19,7 @@ const ServicesPage = () => {
     <Box 
       as="section" 
       py={10} 
-      backgroundImage="url('%PUBLIC_URL%/Services BG.webp')"  // Path to your background image
+      backgroundImage="url('/Services BG.webp')"  // Path to your background image
       backgroundSize="cover" 
       backgroundPosition="center" 
       backgroundRepeat="no-repeat"

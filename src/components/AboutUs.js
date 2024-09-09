@@ -6,7 +6,7 @@ const AboutUs = () => {
     <Box
       as="section"
       py={1}
-      backgroundImage="url('%PUBLIC_URL%/About BG.webp')" // Add your image path
+      backgroundImage="url('/About BG.webp')" // Add your image path
       backgroundSize="cover"
       backgroundPosition="center"
       backgroundRepeat="no-repeat"

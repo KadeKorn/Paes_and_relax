@@ -38,7 +38,7 @@ const Header = () => {
     >
       <Flex maxW="container.xl" mx="auto" align="center">
         <Image
-          src="%PUBLIC_URL%/BoneLogo.webp"
+          src="/BoneLogo.webp"
           alt="Paws &amp; Relax Logo"
           boxSize="40px"
           mr={4}
