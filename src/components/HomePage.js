@@ -6,13 +6,13 @@ const HomePage = () => {
     <Box
       as="section"
       id="home"  // Added ID for smooth scrolling links
-      pt={0}  
+      pt={0}
       mt="0"
-      backgroundImage="url('/Day_background.png')" 
+      backgroundImage="url('Day_background.png')"
       backgroundSize="cover"
       backgroundPosition="center"
       backgroundRepeat="no-repeat"
-      minHeight="100vh"  
+      minHeight="100vh"
       display="flex"
       justifyContent="center"
       alignItems="center"
@@ -40,7 +40,7 @@ const HomePage = () => {
           textAlign="center"
           color="blue.800"
         >
-          Worried about leaving your furry friends? Don’t be.
+          Worried about leaving your furry friends? Don't be.
         </Text>
         <Text
           fontSize={{ base: "md", md: "lg" }}
@@ -54,7 +54,7 @@ const HomePage = () => {
           textAlign="center"
           color="blue.800"
         >
-          Your pets will be loved, cared for, and treated like family while you’re away.
+          Your pets will be loved, cared for, and treated like family while you're away.
         </Text>
       </VStack>
     </Box>
