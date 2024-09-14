@@ -6,7 +6,7 @@ const AboutUs = () => {
     <Box
       as="section"
       py={1}
-      backgroundImage="url('/About%20BG.webp')" // Updated path
+      backgroundImage="url('About%20BG.webp')" // Removed leading slash
       backgroundSize="cover"
       backgroundPosition="center"
       backgroundRepeat="no-repeat"
@@ -25,7 +25,7 @@ const AboutUs = () => {
           <Box>
             {/* Wrapping Image */}
             <Image
-              src="/IMG_6951.jpg" // Updated path
+              src="IMG_6951.jpg" // Removed leading slash
               alt="Founder of Paws & Relax"
               borderRadius="full"
               boxSize="300px"
