@@ -8,7 +8,7 @@ const HomePage = () => {
       id="home"  // Added ID for smooth scrolling links
       pt={0}
       mt="0"
-      backgroundImage="url('/Paws_and_Relax/Day_background.png')"
+      backgroundImage="url('/Day_background.png')"
       backgroundSize="cover"
       backgroundPosition="center"
       backgroundRepeat="no-repeat"

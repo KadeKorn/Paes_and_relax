@@ -6,7 +6,7 @@ const AboutUs = () => {
     <Box
       as="section"
       py={1}
-      backgroundImage="url('/Paws_and_Relax/About%20BG.webp')" // Updated to use GitHub Pages compatible path
+      backgroundImage="url('/About%20BG.webp')" // Updated path
       backgroundSize="cover"
       backgroundPosition="center"
       backgroundRepeat="no-repeat"
@@ -25,7 +25,7 @@ const AboutUs = () => {
           <Box>
             {/* Wrapping Image */}
             <Image
-              src="/Paws_and_Relax/IMG_6951.jpg" // Updated to use GitHub Pages compatible path
+              src="/IMG_6951.jpg" // Updated path
               alt="Founder of Paws & Relax"
               borderRadius="full"
               boxSize="300px"
