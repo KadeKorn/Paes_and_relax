@@ -6,7 +6,7 @@ const AboutUs = () => {
     <Box
       as="section"
       py={1}
-      backgroundImage="url('About BG.webp')" // Changed to relative path
+      backgroundImage="url('./About%20BG.webp')" // Updated to use relative path and encode space
       backgroundSize="cover"
       backgroundPosition="center"
       backgroundRepeat="no-repeat"
@@ -25,7 +25,7 @@ const AboutUs = () => {
           <Box>
             {/* Wrapping Image */}
             <Image
-              src="IMG_6951.jpg" // Changed to relative path
+              src="./IMG_6951.jpg" // Updated to use relative path
               alt="Founder of Paws & Relax"
               borderRadius="full"
               boxSize="300px"
