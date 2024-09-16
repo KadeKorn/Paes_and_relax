@@ -7,7 +7,7 @@ const BookingSection = () => {
     <Box
       as="section"
       py={10}
-      backgroundImage="url('/Booking BG.webp')" // Background image
+      backgroundImage="url('Booking BG.webp')" // Background image
       backgroundSize="cover"
       backgroundPosition="center"
       backgroundRepeat="no-repeat"

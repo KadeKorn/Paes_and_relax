@@ -3,23 +3,23 @@ import { Box, VStack, Heading, Text, SimpleGrid, Card, CardBody, Image } from '@
 
 const TestimonialsPage = () => {
   const testimonials = [
-    { 
-      id: 1, 
-      name: 'John Doe', 
-      text: 'Paws & Relax took amazing care of my dog while I was on vacation. Highly recommended!', 
-      image: 'https://via.placeholder.com/150' 
+    {
+      id: 1,
+      name: 'John Doe',
+      text: 'Paws & Relax took amazing care of my dog while I was on vacation. Highly recommended!',
+      image: 'https://via.placeholder.com/150'
     },
-    { 
-      id: 2, 
-      name: 'Jane Smith', 
-      text: 'The team at Paws & Relax is professional and caring. My cats were in great hands!', 
-      image: 'https://via.placeholder.com/150' 
+    {
+      id: 2,
+      name: 'Jane Smith',
+      text: 'The team at Paws & Relax is professional and caring. My cats were in great hands!',
+      image: 'https://via.placeholder.com/150'
     },
-    { 
-      id: 3, 
-      name: 'Mike Johnson', 
-      text: 'I was worried about leaving my pet, but Paws & Relax put my mind at ease. Excellent service!', 
-      image: 'https://via.placeholder.com/150' 
+    {
+      id: 3,
+      name: 'Mike Johnson',
+      text: 'I was worried about leaving my pet, but Paws & Relax put my mind at ease. Excellent service!',
+      image: 'https://via.placeholder.com/150'
     },
   ];
 
@@ -27,7 +27,7 @@ const TestimonialsPage = () => {
     <Box
       as="section"
       py={10}
-      backgroundImage="url('/Test BG Sunset similat to About BG.webp')" 
+      backgroundImage="url('Test BG Sunset similat to About BG.webp')"
       backgroundSize="cover"
       backgroundPosition="center"
       backgroundRepeat="no-repeat"
