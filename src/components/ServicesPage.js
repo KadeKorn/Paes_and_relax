@@ -16,10 +16,12 @@ const services = [
 
 const ServicesPage = () => {
   return (
+
+
     <Box
       as="section"
       py={10}
-      backgroundImage="url('Services%20BG.webp')"  // Path to your background image
+      backgroundImage="url('Services BG.webp')"  // Path to your background image
       backgroundSize="cover"
       backgroundPosition="center"
       backgroundRepeat="no-repeat"
