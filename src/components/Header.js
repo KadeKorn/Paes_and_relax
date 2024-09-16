@@ -37,13 +37,15 @@ const Header = () => {
       backdropFilter="blur(10px)"
     >
       <Flex maxW="container.xl" mx="auto" align="center">
-        <Image
-          src="BoneLogo.webp"
-          alt="Paws &amp; Relax Logo"
-          boxSize="40px"
-          mr={4}
-          borderRadius="full"
-        />
+        <Box width="50px" height="50px" overflow="hidden" mr={4}>
+          <Image
+            src="BoneLogo.webp"
+            alt="Paws &amp; Relax Logo"
+            objectFit="cover"
+            width="100%"
+            height="100%"
+          />
+        </Box>
         <Box fontWeight="bold" fontSize="xl" color="blue.900">
           Paws &amp; Relax
         </Box>
