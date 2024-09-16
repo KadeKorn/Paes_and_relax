@@ -9,19 +9,20 @@ const services = [
   },
   {
     name: 'Overnight Sitting',
-    description: "Full overnight care for your home and pets. I’ll stay with your furry friend to provide companionship, nighttime walks, feedings, and ensure your home stays secure while you're away.",
+    description: "Full overnight care for your home and pets. I'll stay with your furry friend to provide companionship, nighttime walks, feedings, and ensure your home stays secure while you're away.",
     price: "$60–$80 per night",
   },
 ];
 
 const ServicesPage = () => {
   return (
-    <Box 
-      as="section" 
-      py={10} 
-      backgroundImage="url('Services%20BG.webp')"  // Path to your background image
-      backgroundSize="cover" 
-      backgroundPosition="center" 
+
+    <Box
+      as="section"
+      py={10}
+      backgroundImage="url('Services BG.webp')"  // Path to your background image
+      backgroundSize="cover"
+      backgroundPosition="center"
       backgroundRepeat="no-repeat"
       minHeight="100vh"  // Ensures it covers the viewport
     >
