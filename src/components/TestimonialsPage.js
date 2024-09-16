@@ -27,6 +27,7 @@ const TestimonialsPage = () => {
     <Box
       as="section"
       py={10}
+ fix-image-paths
       backgroundImage="url('Test BG Sunset similat to About BG.webp')"
       backgroundSize="cover"
       backgroundPosition="center"
