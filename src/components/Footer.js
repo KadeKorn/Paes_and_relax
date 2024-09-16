@@ -8,15 +8,15 @@ const Footer = () => {
       <Container maxW="container.xl">
         <Stack direction={{ base: 'column', md: 'row' }} spacing={4} justify="space-between" align="center">
           <Stack direction="row" spacing={6}>
-            <Link href="/">Home</Link>
-            <Link href="/about">About Us</Link>
-            <Link href="/services">Services</Link>
-            <Link href="/contact">Contact</Link>
-            <Link href="/testimonials">Testimonials</Link>
+            <Link href="#home">Home</Link>
+            <Link href="#about">About Us</Link>
+            <Link href="#services">Services</Link>
+            <Link href="#booking">Contact</Link>
+            <Link href="#testimonials">Testimonials</Link>
           </Stack>
-          <Text>© 2024 Paws & Relax. All rights reserved.          </Text>
+          <Text>© 2024 Paws & Relax. All rights reserved.</Text>
           <Stack direction="row" spacing={2}>
-          <IconButton aria-label="Yelp" icon={<FaYelp />} rounded="full" />
+            <IconButton aria-label="Yelp" icon={<FaYelp />} rounded="full" />
             <IconButton aria-label="Instagram" icon={<FaInstagram />} rounded="full" />
           </Stack>
         </Stack>
