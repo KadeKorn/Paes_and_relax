@@ -27,7 +27,7 @@ const TestimonialsPage = () => {
     <Box
       as="section"
       py={10}
-      backgroundImage="url('/Test BG Sunset similat to About BG.webp')" 
+      backgroundImage="url('Test%20BG%20Sunset%20similat%20to%20About%20BG.webp')" 
       backgroundSize="cover"
       backgroundPosition="center"
       backgroundRepeat="no-repeat"
