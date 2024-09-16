@@ -15,19 +15,19 @@ function App() {
       <Box minHeight="100vh"> {/* Ensure this Box takes up the full viewport height */}
         <Header />
         <VStack spacing={0} align="stretch">
-          <Box className="section">
+          <Box className="section" id="home">
             <HomePage />
           </Box>
-          <Box className="section">
+          <Box className="section" id="about">
             <AboutUs />
           </Box>
-          <Box className="section">
+          <Box className="section" id="services">
             <ServicesPage />
           </Box>
-          <Box className="section">
+          <Box className="section" id="booking">
             <BookingSection />
           </Box>
-          <Box className="section">
+          <Box className="section" id="testimonials">
             <TestimonialsPage />
           </Box>
         </VStack>
