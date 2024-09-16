@@ -1,4 +1,3 @@
-/** @jsxImportSource @emotion/react */
 import React from "react";
 import {
   Box,
@@ -14,6 +13,7 @@ import {
   useBreakpointValue,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+import boneLogo from '../assets/BoneLogo.webp'; // Import your logo image
 
 const Header = () => {
   const { isOpen, onToggle } = useDisclosure();
@@ -39,11 +39,12 @@ const Header = () => {
       <Flex maxW="container.xl" mx="auto" align="center">
         <Box width="50px" height="50px" overflow="hidden" mr={4}>
           <Image
-            src="BoneLogo.webp"
+            src={boneLogo} // Use imported image here
             alt="Paws &amp; Relax Logo"
             objectFit="cover"
             width="100%"
             height="100%"
+            borderRadius="full"
           />
         </Box>
         <Box fontWeight="bold" fontSize="xl" color="blue.900">
@@ -127,6 +128,5 @@ const NavLink = ({ href, children, mobile }) => (
     {children}
   </Link>
 );
-
 
 export default Header;

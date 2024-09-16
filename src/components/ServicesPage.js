@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, VStack, Heading, Text, SimpleGrid, Card, CardHeader, CardBody, CardFooter, Button } from '@chakra-ui/react';
+import servicesBG from '../assets/Services_BG.webp'; // Import the background image
 
 const services = [
   {
@@ -16,12 +17,10 @@ const services = [
 
 const ServicesPage = () => {
   return (
-
-
     <Box
       as="section"
       py={10}
-      backgroundImage="url('Services BG.webp')"  // Path to your background image
+      backgroundImage={`url(${servicesBG})`}  // Use imported image here
       backgroundSize="cover"
       backgroundPosition="center"
       backgroundRepeat="no-repeat"

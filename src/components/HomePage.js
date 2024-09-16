@@ -1,14 +1,15 @@
 import React from 'react';
 import { Box, Heading, Text, VStack } from '@chakra-ui/react';
+import dayBackground from '../assets/Day_background.png'; // Adjust the path based on your file structure
 
 const HomePage = () => {
   return (
     <Box
       as="section"
-      id="home"  // Added ID for smooth scrolling links
+      id="home"  
       pt={0}
       mt="0"
-      backgroundImage="url('Day_background.png')"
+      backgroundImage={`url(${dayBackground})`}  // Use imported image here
       backgroundSize="cover"
       backgroundPosition="center"
       backgroundRepeat="no-repeat"
