@@ -14,12 +14,22 @@ function App() {
     <ChakraProvider>
       <Box minHeight="100vh"> {/* Ensure this Box takes up the full viewport height */}
         <Header />
-        <VStack spacing={8} align="stretch" p={5}>
-          <HomePage />
-          <AboutUs />
-          <ServicesPage />
-          <BookingSection />
-          <TestimonialsPage />
+        <VStack spacing={0} align="stretch">
+          <Box className="section">
+            <HomePage />
+          </Box>
+          <Box className="section">
+            <AboutUs />
+          </Box>
+          <Box className="section">
+            <ServicesPage />
+          </Box>
+          <Box className="section">
+            <BookingSection />
+          </Box>
+          <Box className="section">
+            <TestimonialsPage />
+          </Box>
         </VStack>
         <Footer />
       </Box>
