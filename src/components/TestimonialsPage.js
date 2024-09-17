@@ -28,16 +28,15 @@ const TestimonialsPage = () => {
       as="section"
       py={10}
 
-
+ fix-image-paths
       backgroundImage="url('Test BG Sunset similat to About BG.webp')"
-
       backgroundSize="cover"
       backgroundPosition="center"
       backgroundRepeat="no-repeat"
-      minHeight="100vh"  // Ensures the section takes up at least full viewport height
+      minHeight="50vh"  // Ensures the section takes up at least full viewport height
     >
       <VStack spacing={8} align="stretch">
-        <Heading as="h2" size="xl" textAlign="center" color="white">  {/* Adjust the text color if necessary */}
+        <Heading as="h2" size="xl" textAlign="center" color="Black">  {/* Adjust the text color if necessary */}
           What Our Clients Say
         </Heading>
 
