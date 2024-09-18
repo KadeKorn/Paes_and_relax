@@ -182,13 +182,18 @@ const ServicesPage = () => {
             <MotionButtonComponent
               colorScheme="blue"
               size="lg"
-              onClick={() => (window.location.href = "/booking")} // Update the path as needed
+              onClick={() => {
+                const element = document.getElementById("contact");
+                if (element) {
+                  element.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               transition={{ duration: 0.2 }}
               aria-label="Book a Service"
             >
-              Book a Service
+              Book Now
             </MotionButtonComponent>
           </VStack>
         </Box>
