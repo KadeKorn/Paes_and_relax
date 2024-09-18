@@ -42,8 +42,8 @@ const TestimonialsPage = () => {
 
   // Determine overlay color based on color mode for better readability
   const sectionOverlayBg = useColorModeValue(
-    "rgba(255, 255, 255, 0.4)", // Light mode
-    "rgba(0, 0, 0, 0.3)" // Dark mode
+    "rgba(255, 255, 255, 0.1)", // Light mode
+    "rgba(0, 0, 0, 0.05)" // Dark mode
   );
 
   // Determine text color based on color mode
