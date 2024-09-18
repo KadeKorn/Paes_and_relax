@@ -12,8 +12,8 @@ import {
   Button,
   Container,
   useColorModeValue,
-  Image, // Import Image if you plan to add images
-  Tooltip,
+  //Image, // Import Image if you plan to add images
+  //Tooltip,
 } from "@chakra-ui/react";
 import { motion } from "framer-motion"; // Import Framer Motion
 import servicesBG from "../assets/Services_BG.webp"; // Import the background image
@@ -54,7 +54,10 @@ const ServicesPage = () => {
   const textColor = useColorModeValue("gray.800", "gray.100");
 
   // Determine card background based on color mode
-  const cardBg = useColorModeValue("rgba(255, 255, 255, 0.6)", "rgba(0, 0, 0, 0.6)");
+  const cardBg = useColorModeValue(
+    "rgba(255, 255, 255, 0.6)",
+    "rgba(0, 0, 0, 0.6)"
+  );
 
   return (
     <Box
@@ -93,7 +96,8 @@ const ServicesPage = () => {
             {/* Main Heading with Animation */}
             <MotionBox
               initial={{ opacity: 0, y: -50 }}
-              animate={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               transition={{ duration: 0.8, ease: "easeOut" }}
             >
               <Heading
@@ -110,7 +114,8 @@ const ServicesPage = () => {
             {/* Subheading with Animation */}
             <MotionBox
               initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
             >
               <Text fontSize="xl" textAlign="center" color={textColor}>
@@ -127,8 +132,13 @@ const ServicesPage = () => {
                   boxShadow="md"
                   borderRadius="md"
                   initial={{ opacity: 0, scale: 0.95 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5, delay: 0.4 + index * 0.2, ease: "easeOut" }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{
+                    duration: 0.5,
+                    delay: 0.4 + index * 0.2,
+                    ease: "easeOut",
+                  }}
                   whileHover={{ scale: 1.02, boxShadow: "xl" }}
                   whileTap={{ scale: 0.98, boxShadow: "md" }}
                 >
@@ -155,7 +165,12 @@ const ServicesPage = () => {
                     */}
                   </CardBody>
                   <CardFooter>
-                    <Text fontWeight="bold" textAlign="center" width="100%" color={textColor}>
+                    <Text
+                      fontWeight="bold"
+                      textAlign="center"
+                      width="100%"
+                      color={textColor}
+                    >
                       {service.price}
                     </Text>
                   </CardFooter>
@@ -167,7 +182,7 @@ const ServicesPage = () => {
             <MotionButtonComponent
               colorScheme="blue"
               size="lg"
-              onClick={() => window.location.href = "/booking"} // Update the path as needed
+              onClick={() => (window.location.href = "/booking")} // Update the path as needed
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               transition={{ duration: 0.2 }}
