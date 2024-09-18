@@ -88,14 +88,16 @@ const TestimonialsPage = () => {
           boxShadow="xl"
           backdropFilter="blur(5px)" // Adds a subtle blur effect to enhance readability
           initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <VStack spacing={8} align="stretch">
             {/* Main Heading with Animation */}
             <MotionBox
               initial={{ opacity: 0, y: -50 }}
-              animate={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               transition={{ duration: 0.8, ease: "easeOut" }}
             >
               <Heading
@@ -122,7 +124,8 @@ const TestimonialsPage = () => {
                   bg={cardBg} // Semi-transparent background for cards
                   borderRadius="md"
                   initial={{ opacity: 0, y: 50 }}
-                  animate={{ opacity: 1, y: 0 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
                   transition={{
                     duration: 0.6,
                     delay: 0.2 + index * 0.2,
