@@ -71,14 +71,12 @@ const BookingSection = () => {
         width="100%"
       >
         {/* Main Content Container */}
-        <VStack
-          spacing={8}
-          align="center"
-        >
+        <VStack spacing={8} align="center">
           {/* Main Heading with Animation */}
           <MotionBox
             initial={{ opacity: 0, y: -50 }}
-            animate={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.8, ease: 'easeOut' }}
           >
             <Heading
@@ -96,7 +94,8 @@ const BookingSection = () => {
           {/* Subheading with Animation */}
           <MotionBox
             initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.3, ease: 'easeOut' }}
           >
             <Text
@@ -106,7 +105,8 @@ const BookingSection = () => {
               color={useColorModeValue('black', 'white')}
               textShadow={textShadow}
             >
-              Schedule a visit today and give your pets the loving care they deserve! Feel free to text or call us for bookings.
+              Schedule a visit today and give your pets the loving care they deserve! Feel free to
+              text or call us for bookings.
             </Text>
           </MotionBox>
 
@@ -115,7 +115,8 @@ const BookingSection = () => {
             {/* Phone */}
             <MotionBox
               initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.6, ease: 'easeOut' }}
             >
               <Text
@@ -132,7 +133,8 @@ const BookingSection = () => {
             {/* Email */}
             <MotionBox
               initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.7, ease: 'easeOut' }}
             >
               <Text
@@ -170,7 +172,11 @@ const BookingSection = () => {
               >
                 Follow Us:
               </Text>
-              <SimpleGrid columns={{ base: 2, md: 2 }} spacing={4} justifyContent="center">
+              <SimpleGrid
+                columns={{ base: 2, md: 2 }}
+                spacing={4}
+                justifyContent="center"
+              >
                 {/* Yelp Link with Tooltip and Animation */}
                 <MotionLink
                   href="https://www.yelp.com" // Replace with your Yelp URL
