@@ -11,10 +11,10 @@ import {
   Collapse,
   useDisclosure,
   useBreakpointValue,
-  useColorModeValue, // Ensure this is imported
+  useColorModeValue,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
-import { motion } from "framer-motion"; // Import Framer Motion
+import { motion } from "framer-motion";
 import boneLogo from "../assets/BoneLogo.webp"; // Import your logo image
 
 // Create motion-enabled Chakra components
@@ -55,8 +55,8 @@ const Header = () => {
 
   // Define mobile menu background color
   const mobileMenuBg = useColorModeValue(
-    "rgba(255, 204, 153, 0.9)", // Light mode
-    "rgba(0, 0, 0, 0.9)" // Dark mode
+    "rgba(255, 204, 153, 0.15)", // Light mode
+    "rgba(0, 0, 0, 0.15)" // Dark mode
   );
 
   return (
@@ -66,14 +66,14 @@ const Header = () => {
       top="0"
       left="0"
       right="0"
-      width="94.5%"
+      width={{ base: "100%", sm: "95%", md: "94.5%" }} // Responsive width
       mx="auto"
       zIndex="10"
-      py={4}
-      px={10}
+      py={{ base: 3, sm: 4, md: 4 }} // Responsive vertical padding
+      px={{ base: 4, sm: 6, md: 10 }} // Responsive horizontal padding
       background={bgColor} // Slight transparent desert color
       boxShadow="0 4px 6px rgba(0, 0, 0, 0.1)"
-      borderRadius="0 0 10px 10px"
+      borderRadius={{ base: "0", md: "0 0 10px 10px" }} // Rounded corners on larger screens
       backdropFilter="blur(10px)"
     >
       <MotionFlex
@@ -92,7 +92,12 @@ const Header = () => {
           display="flex"
           alignItems="center"
         >
-          <Box width="50px" height="50px" overflow="hidden" mr={4}>
+          <Box
+            width={{ base: "40px", sm: "50px", md: "60px" }} // Responsive logo size
+            height={{ base: "40px", sm: "50px", md: "60px" }}
+            overflow="hidden"
+            mr={4}
+          >
             <Image
               src={boneLogo} // Use imported image here
               alt="Paws &amp; Relax Logo"
@@ -102,7 +107,11 @@ const Header = () => {
               borderRadius="full"
             />
           </Box>
-          <Box fontWeight="bold" fontSize="xl" color="blue.900">
+          <Box
+            fontWeight="bold"
+            fontSize={{ base: "lg", sm: "xl", md: "xl" }} // Responsive font size
+            color="blue.900"
+          >
             Paws &amp; Relax
           </Box>
         </MotionFlex>
@@ -123,10 +132,12 @@ const Header = () => {
                 <MotionLinkChakra
                   key={link}
                   href={`#${link.replace(/\s+/g, "").toLowerCase()}`}
-                  mr={4}
+                  mr={{ base: 2, sm: 3, md: 4 }} // Responsive right margin
                   color={linkColor}
                   fontWeight="bold"
-                  p={2}
+                  p={{ base: 2, sm: 3, md: 4 }} // Responsive padding
+                  textDecoration="none" // Remove underline
+                  _hover={{ textDecoration: "none" }} // Ensure no underline on hover
                   custom={index}
                   initial="hidden"
                   animate="visible"
@@ -138,6 +149,7 @@ const Header = () => {
                   }}
                   whileTap={{ scale: 0.95 }}
                   textAlign="center"
+                  fontSize={{ base: "sm", sm: "md", md: "md" }} // Responsive font size
                   aria-label={`Navigate to ${link}`}
                 >
                   {link}
@@ -146,8 +158,8 @@ const Header = () => {
             )}
             <MotionButtonChakra
               colorScheme={buttonColorScheme}
-              ml={4}
-              size="sm"
+              ml={{ base: 2, sm: 3, md: 4 }} // Responsive left margin
+              size={{ base: "sm", sm: "sm", md: "md" }} // Responsive button size
               variants={buttonVariants}
               whileHover="hover"
               whileTap="tap"
@@ -169,7 +181,7 @@ const Header = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
-            size="lg"
+            size={{ base: "md", sm: "lg", md: "lg" }} // Responsive icon size
           />
         )}
       </MotionFlex>
@@ -178,10 +190,10 @@ const Header = () => {
       <Collapse in={isOpen} animateOpacity>
         {isMobile && (
           <MotionVStack
-            mt={4}
-            p={4}
+            mt={2} // Adjust top margin as needed
+            p={{ base: 4, sm: 5 }} // Responsive padding
             bg={mobileMenuBg} // Use the pre-defined variable
-            spacing={6}
+            spacing={{ base: 4, sm: 6 }} // Increased spacing for better readability
             align="center"
             display={{ md: "none" }}
             initial={{ height: 0, opacity: 0 }}
@@ -199,8 +211,10 @@ const Header = () => {
                   width="100%"
                   color="blue.900"
                   fontWeight="bold"
-                  p={2}
+                  p={{ base: 2, sm: 1 }} // Increased padding for better spacing
                   textAlign="center"
+                  textDecoration="none" // Remove underline
+                  _hover={{ textDecoration: "none" }} // Ensure no underline on hover
                   custom={index}
                   initial="hidden"
                   animate="visible"
@@ -211,6 +225,7 @@ const Header = () => {
                     transition: { type: "spring", stiffness: 300 },
                   }}
                   whileTap={{ scale: 0.95 }}
+                  fontSize={{ base: "md", sm: "md", md: "md" }} // Responsive font size
                   aria-label={`Navigate to ${link}`}
                 >
                   {link}
@@ -219,7 +234,7 @@ const Header = () => {
             )}
             <MotionButtonChakra
               colorScheme={buttonColorScheme}
-              size="sm"
+              size={{ base: "sm", sm: "sm", md: "md" }} // Responsive button size
               width="100%"
               variants={buttonVariants}
               whileHover="hover"

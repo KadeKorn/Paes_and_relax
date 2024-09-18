@@ -18,13 +18,13 @@ function App() {
           <Box id="home">
             <HomePage />
           </Box>
-          <Box id="about">
+          <Box id="aboutus">
             <AboutUs />
           </Box>
           <Box id="services">
             <ServicesPage />
           </Box>
-          <Box id="booking">
+          <Box id="contact">
             <BookingSection />
           </Box>
           <Box id="testimonials">
