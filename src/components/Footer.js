@@ -49,24 +49,25 @@ const Footer = () => {
       bg={bgColor}
       color={textColor}
       as="footer"
-      py={10}
+      py={{ base: 6, md: 8, lg: 10 }} // Responsive padding
       position="relative"
       zIndex={1}
     >
       <Container maxW="container.xl">
         <Stack
           direction={{ base: 'column', md: 'row' }}
-          spacing={4}
+          spacing={{ base: 4, md: 6, lg: 8 }}
           justify="space-between"
           align="center"
         >
           {/* Navigation Links */}
-          <Stack direction="row" spacing={6}>
+          <Stack direction="row" spacing={{ base: 2, md: 4, lg: 6 }}>
             {['Home', 'About Us', 'Services', 'Contact', 'Testimonials'].map((link) => (
               <MotionLink
                 key={link}
                 href={`#${link.replace(/\s+/g, '').toLowerCase()}`}
                 fontWeight="bold"
+                fontSize={{ base: 'sm', md: 'md', lg: 'lg', xl: 'xl' }} // Responsive font size
                 _hover={{ textDecoration: 'none' }}
                 variants={linkVariants}
                 whileHover="hover"
@@ -78,10 +79,12 @@ const Footer = () => {
           </Stack>
 
           {/* Copyright */}
-          <Text>© 2024 Paws & Relax. All rights reserved.</Text>
+          <Text fontSize={{ base: 'xs', md: 'sm', lg: 'md', xl: 'lg' }}>
+            © 2024 Paws & Relax. All rights reserved.
+          </Text>
 
           {/* Social Media Icons */}
-          <Stack direction="row" spacing={2}>
+          <Stack direction="row" spacing={{ base: 2, md: 4, lg: 6 }}>
             <MotionIconButtonChakra
               as="a"
               href="https://www.yelp.com" // Replace with your Yelp URL
@@ -91,6 +94,7 @@ const Footer = () => {
               icon={<FaYelp />}
               variant="ghost"
               size="lg"
+              fontSize={{ base: 'xl', md: '2xl', lg: '3xl', xl: '4xl' }} // Responsive icon size
               rounded="full"
               variants={iconButtonVariants}
               whileHover="hover"
@@ -105,6 +109,7 @@ const Footer = () => {
               icon={<FaInstagram />}
               variant="ghost"
               size="lg"
+              fontSize={{ base: 'xl', md: '2xl', lg: '3xl', xl: '4xl' }} // Responsive icon size
               rounded="full"
               variants={iconButtonVariants}
               whileHover="hover"
