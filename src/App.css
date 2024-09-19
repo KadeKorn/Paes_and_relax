@@ -8,11 +8,6 @@ body {
   scroll-snap-type: y mandatory;
 }
 
-.section {
-  scroll-snap-align: start;
-  height: 100vh;
-}
-
 button {
   background-color: #ffcc99; /* Desert-inspired button color */
   color: white;
