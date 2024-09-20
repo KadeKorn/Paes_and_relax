@@ -34,9 +34,9 @@ function App() {
           <Box id="contact">
             <BookingSection />
           </Box>
-          <Box id="testimonials">
+          {/* <Box id="testimonials">
             <TestimonialsPage />
-          </Box>
+          </Box> */}
         </Box>
         <Footer />
       </Box>
