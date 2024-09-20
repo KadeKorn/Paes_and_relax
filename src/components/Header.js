@@ -183,7 +183,7 @@ const Header = () => {
               variants={buttonVariants}
               whileHover="hover"
               whileTap="tap"
-              onClick={() => (window.location.href = "#booking")}
+              onClick={() => (window.location.href = "#contact")}
               aria-label="Book Now"
             >
               Book Now
