@@ -19,23 +19,22 @@ function App() {
           as="main"
           height="100vh"
           overflowY="scroll"
-          scrollSnapType="y mandatory"
-          scrollBehavior="smooth"
+          scrollBehavior="auto" // Change to 'auto' or remove
         >
           {/* Sections */}
-          <Box id="home" scrollSnapAlign="start">
+          <Box id="home">
             <HomePage />
           </Box>
-          <Box id="aboutus" scrollSnapAlign="start">
+          <Box id="aboutus">
             <AboutUs />
           </Box>
-          <Box id="services" scrollSnapAlign="start">
+          <Box id="services">
             <ServicesPage />
           </Box>
-          <Box id="contact" scrollSnapAlign="start">
+          <Box id="contact">
             <BookingSection />
           </Box>
-          <Box id="testimonials" scrollSnapAlign="start">
+          <Box id="testimonials">
             <TestimonialsPage />
           </Box>
         </Box>
