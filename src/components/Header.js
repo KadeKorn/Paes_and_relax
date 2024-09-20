@@ -50,8 +50,7 @@ const logoVariants = {
 
 const Header = () => {
   const { isOpen, onToggle } = useDisclosure();
-  // Adjusted breakpoint from md to lg
-  const isMobile = useBreakpointValue({ base: true, lg: false });
+  const isMobile = useBreakpointValue({ base: true, md: false });
 
   // Determine colors based on color mode
   const bgColor = useColorModeValue(
@@ -90,8 +89,7 @@ const Header = () => {
       backdropFilter="blur(10px)"
     >
       <MotionFlex
-        // Made maxW responsive
-        maxW={{ base: "100%", md: "container.md", lg: "container.lg", xl: "container.xl" }}
+        maxW="container.xl"
         mx="auto"
         align="center"
         initial={{ opacity: 0 }}
@@ -99,13 +97,17 @@ const Header = () => {
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
         {/* Logo Section */}
-        <Flex align="center">
+        <Flex
+          align="center"
+          initial={{ x: -50, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+        >
           <MotionBox
-            // Reduced logo size on smaller screens
-            width={{ base: "30px", md: "60px", lg: "70px" }}
-            height={{ base: "30px", md: "60px", lg: "70px" }}
+            width={{ base: "40px", md: "60px", lg: "70px" }} // Adjusted logo sizes
+            height={{ base: "40px", md: "60px", lg: "70px" }}
             overflow="hidden"
-            mr={{ base: 2, md: 4, lg: 4 }}
+            mr={2}
             variants={logoVariants}
             whileHover="hover"
           >
@@ -120,7 +122,7 @@ const Header = () => {
           </MotionBox>
           <MotionBox
             fontWeight="bold"
-            fontSize={{ base: "sm", md: "lg", lg: "xl" }} // Adjusted font sizes
+            fontSize={{ base: "md", md: "lg", lg: "xl" }} // Adjusted font sizes
             color={textColor}
             lineHeight="1.2"
             whileHover={{
@@ -144,12 +146,12 @@ const Header = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
           >
-            {["Home", "About Us", "Services", "Contact", "Testimonials"].map(
+            {["Home", "About Us", "Services", "Contact"].map(
               (link, index) => (
                 <MotionLinkChakra
                   key={link}
                   href={`#${link.replace(/\s+/g, "").toLowerCase()}`}
-                  mr={{ base: 1, md: 2, lg: 4 }} // Adjusted margins
+                  mr={{ base: 2, md: 3, lg: 4 }} // Adjusted margins
                   color={linkColor}
                   fontWeight="bold"
                   p={{ base: 1, md: 2, lg: 3 }} // Adjusted padding
@@ -166,7 +168,7 @@ const Header = () => {
                   }}
                   whileTap={{ scale: 0.95 }}
                   textAlign="center"
-                  fontSize={{ base: "xs", md: "sm", lg: "md" }} // Adjusted font sizes
+                  fontSize={{ base: "sm", md: "sm", lg: "md" }} // Adjusted font sizes
                   aria-label={`Navigate to ${link}`}
                 >
                   {link}
@@ -175,7 +177,7 @@ const Header = () => {
             )}
             <MotionButtonChakra
               colorScheme={buttonColorScheme}
-              ml={{ base: 1, md: 3, lg: 4 }} // Adjusted margin-left
+              ml={{ base: 2, md: 3, lg: 4 }}
               size={{ base: "sm", md: "sm", lg: "md" }}
               fontSize={{ base: "sm", md: "sm", lg: "md" }}
               variants={buttonVariants}
@@ -222,13 +224,13 @@ const Header = () => {
             }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
           >
-            {["Home", "About Us", "Services", "Contact", "Testimonials"].map(
+            {["Home", "About Us", "Services", "Contact"].map(
               (link, index) => (
                 <MotionLinkChakra
                   key={link}
                   href={`#${link.replace(/\s+/g, "").toLowerCase()}`}
                   width="100%"
-                  color={linkColor}
+                  color="blue.900"
                   fontWeight="bold"
                   p={2}
                   textAlign="center"
@@ -244,7 +246,7 @@ const Header = () => {
                     transition: { type: "spring", stiffness: 300 },
                   }}
                   whileTap={{ scale: 0.95 }}
-                  fontSize={{ base: "sm", md: "sm", lg: "md" }} // Adjusted font sizes
+                  fontSize="md"
                   aria-label={`Navigate to ${link}`}
                 >
                   {link}
@@ -259,7 +261,7 @@ const Header = () => {
               variants={buttonVariants}
               whileHover="hover"
               whileTap="tap"
-              onClick={() => (window.location.href = "#contact")}
+              onClick={() => (window.location.href = "#booking")}
               aria-label="Book Now"
             >
               Book Now
