@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Paws_and_Relax/static/css/main.59f0c21e.css",
+    "main.js": "/Paws_and_Relax/static/js/main.ff0db8d2.js",
+    "static/js/453.15774dd9.chunk.js": "/Paws_and_Relax/static/js/453.15774dd9.chunk.js",
+    "static/media/IMG_6951.jpg": "/Paws_and_Relax/static/media/IMG_6951.6f3c2ce098203ac3cc73.jpg",
+    "static/media/Day_background.png": "/Paws_and_Relax/static/media/Day_background.348bffc544ab3a9fd3f1.png",
+    "static/media/Booking_BG.webp": "/Paws_and_Relax/static/media/Booking_BG.d2fe0acd48dcec2673c6.webp",
+    "static/media/TestBG.webp": "/Paws_and_Relax/static/media/TestBG.18a90a722f3c2693a47d.webp",
+    "static/media/Services_BG.webp": "/Paws_and_Relax/static/media/Services_BG.ab9a05e38e7fb643ab0f.webp",
+    "static/media/About_BG.webp": "/Paws_and_Relax/static/media/About_BG.3a68a77b5d6f1157ec42.webp",
+    "static/media/BoneLogo.webp": "/Paws_and_Relax/static/media/BoneLogo.08a571016fc98f65d25e.webp",
+    "index.html": "/Paws_and_Relax/index.html",
+    "main.59f0c21e.css.map": "/Paws_and_Relax/static/css/main.59f0c21e.css.map",
+    "main.ff0db8d2.js.map": "/Paws_and_Relax/static/js/main.ff0db8d2.js.map",
+    "453.15774dd9.chunk.js.map": "/Paws_and_Relax/static/js/453.15774dd9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.59f0c21e.css",
+    "static/js/main.ff0db8d2.js"
+  ]
+}
