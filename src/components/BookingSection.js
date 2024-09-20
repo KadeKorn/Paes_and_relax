@@ -125,7 +125,7 @@ const BookingSection = () => {
                 textShadow={textShadow}
               >
                 <Text as="span" fontWeight="bold">
-                  Phone: (651) 303-8727
+                   Phone: 888-888-8888 {/*(651) 303-8727 */}
                 </Text>
               </Text>
             </MotionBox>
