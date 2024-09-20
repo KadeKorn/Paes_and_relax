@@ -125,13 +125,13 @@ const BookingSection = () => {
                 textShadow={textShadow}
               >
                 <Text as="span" fontWeight="bold">
-                   Phone: 888-888-8888 {/*(651) 303-8727 */}
+                   Phone: (651) 303-8727
                 </Text>
               </Text>
             </MotionBox>
 
             {/* Email */}
-            <MotionBox
+            {/* <MotionBox
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
@@ -146,7 +146,7 @@ const BookingSection = () => {
                   Email: PawsAndRelax@outlook.com
                 </Text>
               </Text>
-            </MotionBox>
+            </MotionBox> */}
 
             {/* Call to Action Button with Enhanced Animation */}
             <MotionButton
