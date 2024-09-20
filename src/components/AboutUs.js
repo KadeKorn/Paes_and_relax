@@ -9,7 +9,7 @@ import {
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import aboutBG from "../assets/About_BG.webp";
-import founderImg from "../assets/IMG_6951.jpg";
+import founderImg from "../assets/IMG_6951.png";
 
 const MotionBox = motion(Box);
 const MotionImage = motion(Image);
@@ -110,7 +110,7 @@ const AboutUs = () => {
               color={textColor}
               mb={4}
             >
-              Hi, I'm George Michael, founder of Paws & Relax. As a lifelong Arizonan
+              Hi, I'm Kade Korn, founder of Paws & Relax. As a lifelong Arizonan
               and ASU grad, my love for animals inspired me to create a
               pet-sitting service that truly understands our community's needs.
             </Text>
