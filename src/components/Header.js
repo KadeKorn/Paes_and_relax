@@ -186,7 +186,7 @@ const Header = () => {
               onClick={() => (window.location.href = "#contact")}
               aria-label="Book Now"
             >
-              Book Now
+              Call Now
             </MotionButtonChakra>
           </MotionFlex>
         )}

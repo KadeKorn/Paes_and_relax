@@ -193,7 +193,7 @@ const ServicesPage = () => {
               transition={{ duration: 0.2 }}
               aria-label="Book a Service"
             >
-              Book Now
+              Call Now
             </MotionButtonComponent>
           </VStack>
         </Box>
